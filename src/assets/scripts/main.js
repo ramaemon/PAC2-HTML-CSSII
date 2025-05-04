@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
     return;
   }
 
-   const loadView = async (view) => {
+   window.loadView = async (view) => {
      try {
       const response = await fetch(`/views/${view}.html`);
       console.log(response);
