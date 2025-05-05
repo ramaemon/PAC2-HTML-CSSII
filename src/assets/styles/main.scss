@@ -21,6 +21,14 @@
 
 @import "bootstrap/scss/bootstrap";
 
+
+/**
+ * Import fonts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto+Slab:wght@100..900&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page

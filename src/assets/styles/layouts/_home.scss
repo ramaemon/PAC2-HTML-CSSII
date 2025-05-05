@@ -2,14 +2,15 @@
   box-sizing: border-box;
 }
 
+/*
 body {
-  /* font-family: $font-family-sans-serif;
+  font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
   background-color: $uoc-bg;
-  color: $uoc-corporate;*/
+  color: $uoc-corporate;
 }
-
+*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(
@@ -33,7 +34,7 @@ body {
     font-size: 25px;
   }
 }
-
+/*
 .uoc-logo {
   display: block;
   margin-left: auto;
@@ -56,4 +57,4 @@ body {
   @media (min-width: $mqMinWidth) {
     font-size: 36px;
   }
-}
+}*/
