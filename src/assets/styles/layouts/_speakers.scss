@@ -4,6 +4,7 @@
     padding: 2.5rem;
 
     &__container {
+        // 2 Box Model
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -11,18 +12,33 @@
     }
     
     &__speaker {
-        background-color: transparent;
-        min-width: 260px;
+        // 1 Position
+        padding: $padding;
+        // 2 Box Model
         flex: 1;
+        min-width: 260px;
+        // 4 Visual
+        background-color: transparent;
         border: 1px solid $circular-economy-base;
         border-radius: 0.5rem;
     }
 
+    &__card-header {
+        .speaker__company {
+            // 3 Typography
+            font-weight: 600;
+            color: $subtitle;
+        }
+    }
+
     &__card-body {
+        // 1 Position
+        padding-bottom: $padding;
+        // 2 Box Model
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        display: flex;
         img {
             box-sizing: border-box;
             aspect-ratio: 1;
