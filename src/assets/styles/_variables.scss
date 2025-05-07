@@ -3,11 +3,11 @@
 $font-family-sans-serif: "Zilla Slab", serif;
 $font-family-serif: "Montserrat", sans-serif;
 
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-$circular-economy-title: #3F7D58;
+// $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$gradient-start: #E1EEBC;
+$gradient-end: #328E6E;
+$circular-economy-base: #328E6E;
+$circular-economy-gradient: linear-gradient(to bottom, $gradient-start, $gradient-end);
 
 $mqMaxWidth: 1025px;
-// $mqMiddleWidth: 468px;
 $mqMinWidth: 468px;

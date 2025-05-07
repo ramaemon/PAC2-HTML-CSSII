@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: $font-family-serif;
+  background: $circular-economy-gradient;
+  height: 100%;
   /*
   font-size: 16px;
   line-height: 24px;
-  background-color: $uoc-bg;
   color: $uoc-corporate;
   */
 }
@@ -52,7 +57,7 @@ body {
   grid-row: 1 / 3;
   .__text {
     font-family: $font-family-sans-serif;
-    color: $circular-economy-title;
+    color: $circular-economy-base;
     font-weight: bold;
     margin-bottom: 0px;
   }
@@ -62,11 +67,11 @@ body {
 }
 
 .first-title {
-  color: $circular-economy-title;
+  color: $circular-economy-base;
   font-weight: 700;
 }
 .second-title {
-  color: $circular-economy-title;
+  color: $circular-economy-base;
   font-weight: 900;
   @media (min-width: $mqMaxWidth) {
     font-size: 3.5rem;

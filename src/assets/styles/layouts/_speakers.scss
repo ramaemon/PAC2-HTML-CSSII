@@ -1,0 +1,35 @@
+
+
+.speakers {
+    padding: 2.5rem;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    
+    &__speaker {
+        background-color: transparent;
+        min-width: 260px;
+        flex: 1;
+        border: 1px solid $circular-economy-base;
+        border-radius: 0.5rem;
+    }
+
+    &__card-body {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        img {
+            box-sizing: border-box;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 50%;
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+}
