@@ -1,0 +1,14 @@
+.economy-circular-footer {
+    &__list-group {
+        &:first-child {
+            img {
+                width: 2rem;
+            }
+        }
+        
+    }
+    &__list-group-item {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
