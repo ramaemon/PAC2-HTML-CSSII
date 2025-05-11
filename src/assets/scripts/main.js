@@ -6,7 +6,7 @@
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
 
-// import * as bootstrap from 'bootstrap'
+import * as bootstrap from 'bootstrap'
 
 /**
  * Write any other JavaScript below
@@ -39,3 +39,21 @@ window.addEventListener('load', () => {
    loadView('home');
 
 });
+
+window.handleSubmit = event => {
+  event.preventDefault();
+
+  const form = event.target;
+  const formData = new FormData(form);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => window.location.href = "/views/contacto.html")
+    .catch(error => {
+      console.error("Error: ", error);
+      alert(error);
+    });
+};

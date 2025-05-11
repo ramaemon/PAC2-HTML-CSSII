@@ -1,4 +1,5 @@
 html {
+  height: 100%;
   background: $circular-economy-base;
 }
 
@@ -6,8 +7,16 @@ body {
   // 1 Position
   margin: 0;
   padding: 0;
+  height: 100%;
   // 3 Typography
   font-family: $font-family-serif;
   // 4 Visual
   background: $circular-economy-gradient;
 }
+
+h1, h2 {
+  font-family: $font-family-sans-serif;
+  font-weight: 900;
+  color: $primary;
+  font-size: 3.5rem;
+} 

@@ -7,14 +7,20 @@
     </nav>
     <section class="form">
         <h1>Contacte</h1>
-        <form class="row">
+        <form 
+            class="row"
+            data-netlify="true"
+            name="contact"
+            method="post"
+            onSubmit="handleSubmit(event)"
+        >
             <div class="col-md-6 mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="email" class="contact-form__form-control--custom form-control" id="nombre" aria-describedby="emailHelp">
+                <label name="form-name" for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="contact-form__form-control--custom form-control" id="nombre">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="apellidos" class="form-label">Apellidos</label>
-                <input type="password" class="contact-form__form-control--custom form-control" id="apellidos">
+                <input type="text" class="contact-form__form-control--custom form-control" id="apellidos">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="email" class="form-label">Email</label>
@@ -22,7 +28,7 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label for="Telefono" class="form-label">Teléfono</label>
-                <input type="password" class="contact-form__form-control--custom form-control" id="Telefono">
+                <input type="phone" class="contact-form__form-control--custom form-control" id="Telefono">
             </div>
             <div class="col-12 mb-3">
                 <label class="form-check-label" for="mensaje">Mensaje</label>
