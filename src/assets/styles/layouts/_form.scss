@@ -1,0 +1,9 @@
+.contact-form {
+    padding: 2.5rem;
+    &__form-control--custom {
+        border-radius: 0;
+        border: transparent;
+        border-bottom: 1px solid $circular-economy-banner;
+        background-color: transparent;
+    }
+}

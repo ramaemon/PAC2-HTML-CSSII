@@ -4,14 +4,25 @@ $font-family-sans-serif: "Zilla Slab", serif;
 $font-family-serif: "Montserrat", sans-serif;
 
 // $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-$gradient-start: #E1EEBC;
-$gradient-end: #328E6E;
 $circular-economy-base: #328E6E;
-$circular-economy-gradient: linear-gradient(to bottom, $gradient-start, $gradient-end);
 $circular-economy-banner: #FFFBDE;
+$gradient-start: #E1EEBC;
+$gradient-end: $circular-economy-base;
+$circular-economy-gradient: linear-gradient(to bottom, $gradient-start, $gradient-end);
 $padding: 1.8rem;
 $subtitle: #205781;
 $primary: #3E3F5B;
+
+// sobrescriure els colors de bootstrap
+
+$theme-colors: (
+    "primary":    $circular-economy-banner,
+    "secondary":  #727D73, // gris verdos
+    "success":    #578E7E, // Verd
+    "info":       #D0DDD0, // Gris blavos
+    "warning":    #F4D793,
+    "danger":     #A94A4A
+);
 
 $mqMaxWidth: 1025px;
 $mqMinWidth: 468px;
