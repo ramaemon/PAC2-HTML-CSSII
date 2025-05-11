@@ -16,7 +16,6 @@ body {
   grid-auto-rows: auto;
   gap: 16px;
   div {
-    border: 1px solid #000;
 
     &:first-child {
       position: relative;
@@ -48,6 +47,7 @@ body {
 
 .circular-economy {
   grid-row: 1 / 3;
+  background-color: ;
   .__text {
     font-family: $font-family-sans-serif;
     color: $circular-economy-base;

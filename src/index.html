@@ -5,33 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Jornada d'Economia Circular</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Inici</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="loadView('speakers'); return false;" href="#">Ponents</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="loadView('article'); return false;" href="#">Article</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" onclick="loadView('form'); return false;" href="#">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <include src="./views/header.html"></include>
     <a style="display: none;" href="./views/home.html">home</a>
     <a style="display: none;" href="./views/speakers.html">speakers</a>
     <a style="display: none;" href="./views/article.html">article</a>
